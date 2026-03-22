@@ -1,35 +1,27 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f5f7fa;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
-header {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
+.card {
     background: white;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-h2 {
-    color: #333;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-ul {
-    list-style: square;
+.card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
 }
 
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #222;
-    color: white;
+.card a:hover {
+    color: #ff6600;
 }
