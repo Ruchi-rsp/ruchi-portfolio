@@ -1,42 +1,47 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #0f172a;
+    color: white;
+}
+
 /* HERO */
 .hero {
     text-align: center;
-    padding: 60px 20px;
-    background: radial-gradient(circle at top, #020617, #000);
+    padding: 50px 20px;
+    background: #020617;
 }
 
-/* BUTTON */
+/* IMAGE FIX */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00f2fe;
+}
+
+/* BUTTONS */
 .buttons {
     margin-top: 15px;
 }
 
 .btn {
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #00f2fe, #4facfe);
-    color: white;
-    border-radius: 25px;
+    padding: 10px 18px;
+    background: #00f2fe;
+    color: black;
+    border-radius: 20px;
     text-decoration: none;
+    margin: 5px;
     display: inline-block;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    transform: scale(1.1);
-}
-
-/* PROJECT GRID */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+/* SECTION */
+section {
+    margin: 20px;
     padding: 20px;
-}
-
-.card {
     background: #1e293b;
-    padding: 15px;
     border-radius: 10px;
-    text-align: center;
 }
 
 /* FOOTER */
@@ -50,10 +55,10 @@
 .socials {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .icon {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
