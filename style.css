@@ -51,6 +51,21 @@ h2 {
     color: #ff6600;
 }
 
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #4facfe;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #007BFF;
+}
+
 footer {
     text-align: center;
     padding: 15px;
