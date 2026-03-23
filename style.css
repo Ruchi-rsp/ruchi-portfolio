@@ -1,82 +1,35 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background: #020617;
-    color: white;
-}
-
 /* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: radial-gradient(circle at top, #020617, #000);
 }
 
-/* PROFILE IMAGE */
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #00f2fe;
-    margin-bottom: 15px;
-}
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
+/* BUTTON */
+.buttons {
+    margin-top: 15px;
 }
 
-/* NAME */
-.name {
-    font-size: 28px;
-}
-
-/* TAGLINE */
-.tagline-box {
-    display: inline-block;
-    background: rgba(0, 242, 254, 0.2);
+.btn {
     padding: 10px 20px;
-    border-radius: 25px;
-    margin: 15px 0;
-}
-
-/* BUTTONS */
-.btn, .btn2 {
-    padding: 10px 18px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    color: white;
     border-radius: 25px;
     text-decoration: none;
-    margin: 10px;
     display: inline-block;
     transition: 0.3s;
 }
 
-.btn {
-    background: linear-gradient(135deg, #00f2fe, #4facfe);
-    color: white;
-}
-
-.btn2 {
-    border: 2px solid #00f2fe;
-    color: #00f2fe;
-}
-
-.btn:hover, .btn2:hover {
+.btn:hover {
     transform: scale(1.1);
 }
 
-/* PROJECTS */
-section {
-    margin: 20px;
-    padding: 20px;
-    background: #0f172a;
-    border-radius: 12px;
-}
-
+/* PROJECT GRID */
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
+    padding: 20px;
 }
 
 .card {
@@ -86,10 +39,6 @@ section {
     text-align: center;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
 /* FOOTER */
 .footer {
     text-align: center;
@@ -97,7 +46,7 @@ section {
     background: black;
 }
 
-/* SOCIAL ICONS */
+/* ICONS */
 .socials {
     display: flex;
     justify-content: center;
@@ -107,9 +56,4 @@ section {
 .icon {
     width: 22px;
     height: 22px;
-    transition: 0.3s;
-}
-
-.icon:hover {
-    transform: scale(1.2);
 }
