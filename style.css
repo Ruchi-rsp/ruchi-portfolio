@@ -6,11 +6,10 @@ body {
 }
 
 /* HERO */
-.hero h1 {
+.hero {
     text-align: center;
     padding: 50px 20px;
     background: #020617;
-    margin-top: 10px;
 }
 
 /* IMAGE FIX */
@@ -33,9 +32,17 @@ body {
 .buttons {
     margin-top: 20px;
 }
-
-.btn:hover {
+.btn {
     background: #00cfe8;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+
 }
 
 /* SECTION */
