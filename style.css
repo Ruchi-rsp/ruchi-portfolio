@@ -3,6 +3,15 @@ body {
     margin: 0;
     background: #0f172a;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* MAIN CONTENT */
+main {
+    flex: 1;
 }
 
 /* HERO */
@@ -24,11 +33,6 @@ body {
 .profile-img {
     width: 100%;
     height: auto;
-}
-
-/* TEXT */
-h1 {
-    margin: 10px 0;
 }
 
 /* BUTTON */
