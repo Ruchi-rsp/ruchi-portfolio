@@ -1,109 +1,55 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background: #0f172a;
+    background: #020617;
     color: white;
 }
 
-/* HEADER */
-header {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+/* HERO */
+.hero {
     text-align: center;
-    padding: 60px 20px;
-    animation: fadeIn 1.5s ease-in;
-}
-
-/* SECTION */
-section {
-    margin: 30px;
-    padding: 25px;
-    background: #1e293b;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-    animation: slideUp 1s ease;
-}
-
-/* PROJECT GRID */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-/* CARD */
-.card {
-    background: linear-gradient(145deg, #1e293b, #0f172a);
-    padding: 20px;
-    border-radius: 15px;
-    transition: 0.4s;
+    padding: 100px 20px;
+    background: radial-gradient(circle at top, #020617, #000);
     position: relative;
     overflow: hidden;
 }
 
-.card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 10px 25px rgba(0, 242, 254, 0.5);
+/* PARTICLES BACKGROUND */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.3;
+    top: 0;
+    left: 0;
 }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    padding: 12px 20px;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
-
-/* LINKS */
-a {
-    color: #38bdf8;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #00f2fe;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #020617;
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-/* HERO SECTION */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-}
-
-/* PROFILE IMAGE */
+/* PROFILE */
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    border: 4px solid white;
+    border: 4px solid #00f2fe;
     margin-bottom: 20px;
+    position: relative;
 }
 
-/* TAGLINE */
-.tagline {
+/* NAME */
+.name {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* TAGLINE BOX */
+.tagline-box {
+    display: inline-block;
+    background: rgba(0, 242, 254, 0.2);
+    padding: 15px 25px;
+    border-radius: 30px;
     font-size: 18px;
-    margin: 10px 0 20px;
+    margin-bottom: 25px;
 }
 
 /* BUTTONS */
@@ -113,9 +59,9 @@ footer {
 
 .btn {
     padding: 12px 20px;
-    background: #0f172a;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
     color: white;
-    border-radius: 8px;
+    border-radius: 25px;
     text-decoration: none;
     margin: 10px;
     display: inline-block;
@@ -128,9 +74,10 @@ footer {
 
 .btn2 {
     padding: 12px 20px;
-    background: white;
-    color: #0f172a;
-    border-radius: 8px;
+    background: transparent;
+    border: 2px solid #00f2fe;
+    color: #00f2fe;
+    border-radius: 25px;
     text-decoration: none;
     margin: 10px;
     display: inline-block;
@@ -138,16 +85,64 @@ footer {
 }
 
 .btn2:hover {
-    transform: scale(1.1);
+    background: #00f2fe;
+    color: black;
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+/* SECTION */
+section {
+    margin: 30px;
+    padding: 25px;
+    background: #0f172a;
+    border-radius: 15px;
+}
+
+/* PROJECT GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 242, 254, 0.5);
+}
+
+/* LINKS */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 30px;
+}
+
+/* ICONS */
+.icon {
+    width: 30px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* SOCIALS */
+.socials a {
+    display: inline-block;
 }
