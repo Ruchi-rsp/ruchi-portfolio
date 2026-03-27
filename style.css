@@ -58,6 +58,12 @@ section {
     border-radius: 10px;
 }
 
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
 /* PROJECT GRID */
 .projects {
     display: grid;
