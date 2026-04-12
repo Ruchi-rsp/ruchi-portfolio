@@ -1,3 +1,4 @@
+/* BODY */
 body {
     font-family: Arial;
     margin: 0;
@@ -17,7 +18,7 @@ main {
 /* HERO */
 .hero {
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
     background: #1e293b;
 }
 
@@ -28,6 +29,7 @@ main {
     margin: auto;
     overflow: hidden;
     border-radius: 50%;
+    border: 2px solid #00cfe8;   /* NEW */
 }
 
 .profile-img {
@@ -37,7 +39,7 @@ main {
 
 /* BUTTON */
 .buttons {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .btn {
@@ -47,7 +49,16 @@ main {
     border-radius: 20px;
     text-decoration: none;
     margin: 5px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.btn:hover {
+    background: #00bcd4;
+    transform: scale(1.05);
 }
 
 /* SECTION */
@@ -58,7 +69,28 @@ section {
     border-radius: 10px;
 }
 
-/* SKILL CARD PREMIUM */
+/* PROJECT GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* CARD */
+.card {
+    background: #334155;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* CARD HOVER */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* SKILL CARD */
 .skill-card {
     background: #334155;
     padding: 15px;
@@ -68,7 +100,7 @@ section {
     border: 1px solid transparent;
 }
 
-/* HOVER EFFECT */
+/* SKILL HOVER */
 .skill-card:hover {
     transform: translateY(-8px);
     border: 1px solid #00cfe8;
@@ -83,39 +115,16 @@ section {
     transition: 0.3s;
 }
 
-/* ICON ANIMATION */
+/* ICON HOVER */
 .skill-card:hover .skill-icon {
     transform: scale(1.2);
 }
 
 /* CATEGORY TITLE */
 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     border-left: 4px solid #00cfe8;
     padding-left: 10px;
-}
-/* PROJECT GRID */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.card {
-    background: #334155;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-}
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.btn-icon {
-    width: 16px;
-    height: 16px;
 }
 
 /* FOOTER */
@@ -130,9 +139,16 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 12px;
+    margin-bottom: 8px;
 }
 
 .icon {
     width: 20px;
     height: 20px;
+    transition: 0.3s;
+}
+
+/* ICON HOVER */
+.icon:hover {
+    transform: scale(1.2);
 }
