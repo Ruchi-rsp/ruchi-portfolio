@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,7 +27,7 @@ let userInput = prompt("🔒 Enter Password:");
 
 if (userInput !== password) {
 document.body.innerHTML = `
-<div style="text-align:center;margin-top:100px;font-family:Arial;color:white;">
+<div style="text-align:center;margin-top:100px;color:white;">
 <h1>Access Denied ❌</h1>
 <p>Incorrect Password</p>
 </div>
@@ -34,17 +35,39 @@ document.body.innerHTML = `
 }
 </script>
 
-<main>
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+Ruchi Parekar
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="projects.html">Projects</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HERO -->
 
 <section class="hero">
 
 <div class="img-container">
-<img src="profile.jpeg" class="profile-img" alt="Profile">
+<img src="profile.jpeg" class="profile-img">
 </div>
 
 <h1>Ruchi Parekar</h1>
 
-<p id="typing"></p>
+<p class="typing">
+<span id="typing"></span>
+</p>
 
 <div class="buttons">
 
@@ -56,15 +79,15 @@ document.body.innerHTML = `
 👩 About Me
 </a>
 
-<a href="projects.html" class="btn">
-💻 Projects
-</a>
+</div>
 
+<div class="scroll-down">
+⌄
 </div>
 
 </section>
 
-</main>
+<!-- FOOTER -->
 
 <footer class="footer">
 
@@ -84,32 +107,44 @@ document.body.innerHTML = `
 
 </div>
 
-<p>© 2026 Ruchi Parekar. All Rights Reserved.</p>
+<p>© 2026 Ruchi Parekar | IoT & Embedded Systems Portfolio</p>
 
 </footer>
 
+<!-- TYPING -->
+
 <script>
+
 new Typed("#typing", {
+
 strings: [
+
 "IoT Developer",
 "Embedded Systems Engineer",
-"Firmware Developer",
-"ESP32 Enthusiast",
-"PIC18 Developer"
+"ESP32 Developer",
+"Firmware Engineer",
+"PIC18 Programmer"
+
 ],
+
 typeSpeed: 60,
 backSpeed: 40,
 loop: true
+
 });
+
 </script>
 
+<!-- PARTICLES -->
+
 <script>
+
 particlesJS("particles-js", {
 
 particles: {
 
 number: {
-value: 80
+value: 100
 },
 
 color: {
@@ -129,16 +164,20 @@ value: 3
 },
 
 line_linked: {
+
 enable: true,
 distance: 150,
 color: "#00cfe8",
 opacity: 0.4,
 width: 1
+
 },
 
 move: {
+
 enable: true,
 speed: 2
+
 }
 
 },
@@ -181,6 +220,7 @@ particles_nb: 4
 retina_detect: true
 
 });
+
 </script>
 
 </body>
