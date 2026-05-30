@@ -58,9 +58,9 @@ I enjoy working on projects that combine **hardware and software integration**.
 
 📬 Contact
 
-* 📧 Email: [your-email@gmail.com](mailto:your-email@gmail.com)
+* 📧 Email: parekarruchi@gmail.com
 * 💻 GitHub: https://github.com/ruchi-rsp
-* 💼 LinkedIn: https://linkedin.com/in/your-linkedin
+* 💼 LinkedIn: https://www.linkedin.com/in/ruchi-parekar-550892357/
 
 
 ---
