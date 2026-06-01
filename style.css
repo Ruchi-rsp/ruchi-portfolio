@@ -70,10 +70,12 @@ HERO
 
 .hero{
     text-align:center;
-    padding:50px 20px;
+    min-height:80vh;
     display:flex;
     flex-direction:column;
+    justify-content:center;
     align-items:center;
+    padding:20px;
 }
 
 /* ==========================
@@ -81,12 +83,13 @@ PROFILE IMAGE
 ========================== */
 
 .img-container{
-    width:180px;
-    height:180px;
+    width:220px;
+    height:220px;
     border-radius:50%;
     overflow:hidden;
-    border:3px solid #00cfe8;
+    border:4px solid #00cfe8;
     box-shadow:0 0 25px #00cfe8;
+    margin-bottom:20px;
 }
 
 .profile-img{
@@ -101,16 +104,15 @@ NAME
 ========================== */
 
 .hero h1{
-    font-size:50px;
-    margin:20px 0 10px;
+    font-size:55px;
+    margin:10px 0;
 }
 
 #typing{
     color:#00cfe8;
     font-size:24px;
-    min-height:30px;
+    min-height:35px;
 }
-
 /* ==========================
 BUTTONS
 ========================== */
@@ -253,22 +255,23 @@ MOBILE
 
     .navbar{
         flex-direction:column;
-        padding:15px;
+        padding:10px;
     }
 
     .navbar ul{
         flex-wrap:wrap;
         justify-content:center;
-        gap:12px;
+        gap:10px;
         padding:0;
+        margin-top:10px;
     }
 
     .logo{
-        margin-bottom:10px;
         font-size:20px;
     }
 
     .hero{
+        min-height:auto;
         padding:30px 15px;
     }
 
@@ -289,11 +292,13 @@ MOBILE
         display:flex;
         flex-direction:column;
         align-items:center;
+        width:100%;
     }
 
     .btn{
-        width:200px;
+        width:220px;
         text-align:center;
+        margin:8px 0;
     }
 
     .projects{
@@ -306,12 +311,12 @@ MOBILE
     }
 
     .skill-icon{
-        width:50px;
-        height:50px;
+        width:45px;
+        height:45px;
     }
 
     .icon{
-        width:20px;
-        height:20px;
+        width:22px;
+        height:22px;
     }
 }
