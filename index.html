@@ -1,42 +1,232 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
-    <title>Ruchi Parekar</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ruchi Parekar Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 </head>
 
 <body>
 
+<div id="particles-js"></div>
+
+<script>
+let password = "ruchi123";
+
+let userInput = prompt("🔒 Enter Password:");
+
+if (userInput !== password) {
+document.body.innerHTML = `
+<div style="text-align:center;margin-top:100px;color:white;">
+<h1>Access Denied ❌</h1>
+<p>Incorrect Password</p>
+</div>
+`;
+}
+</script>
+
+<nav class="navbar">
+
+<div class="logo">
+Ruchi Parekar
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="project.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<main>
+
 <section class="hero">
 
-    <img src="profile.jpeg" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
+<div class="img-container">
+<img src="profile.jpeg" class="profile-img" alt="Profile">
+</div>
 
-    <h1>Ruchi Parekar</h1>
+<h1>Ruchi Parekar</h1>
 
-    <p class="tagline">
-        IoT Developer | Embedded Systems | Electronics
-    </p>
+<p class="typing">
+<span id="typing"></span>
+</p>
 
-    <div class="buttons">
-        <a href="resume.pdf" class="btn">Download CV</a>
-        <a href="about.html" class="btn2">About Me</a>
-    </div>
+<div class="buttons">
+
+<a href="resume.pdf" class="btn">
+📄 Resume
+</a>
+
+<a href="about.html" class="btn">
+👩 About Me
+</a>
+
+<a href="skills.html" class="btn">
+💻 Skills
+</a>
+
+<a href="project.html" class="btn">
+🚀 Projects
+</a>
+
+<a href="contact.html" class="btn">
+📧 Contact
+</a>
+
+</div>
+
+<div class="scroll-down">
+⌄
+</div>
 
 </section>
 
+</main>
+
 <footer class="footer">
-    <div class="socials">
-        <a href="mailto:your-parekarruchi@gmail.com">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
-        </a>
-        <a href="https://github.com/ruchi-rsp">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="icon">
-        </a>
-        <a href="https://www.linkedin.com/in/ruchi-parekar-550892357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" class="icon">
-        </a>
-    </div>
+
+<div class="socials">
+
+<a href="mailto:parekarruchi@gmail.com">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
+</a>
+
+<a href="https://github.com/Ruchi-rsp" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="icon">
+</a>
+
+<a href="https://www.linkedin.com/in/ruchi-parekar-550892357/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" class="icon">
+</a>
+
+</div>
+
+<p>© 2026 Ruchi Parekar | IoT & Embedded Systems Portfolio</p>
+
 </footer>
+
+<script>
+
+new Typed("#typing", {
+
+strings: [
+
+"IoT Developer",
+"Embedded Systems Engineer",
+"ESP32 Developer",
+"Firmware Engineer",
+"PIC18 Programmer"
+
+],
+
+typeSpeed: 60,
+backSpeed: 40,
+loop: true
+
+});
+
+</script>
+
+<script>
+
+particlesJS("particles-js", {
+
+particles: {
+
+number: {
+value: 100
+},
+
+color: {
+value: "#00cfe8"
+},
+
+shape: {
+type: "circle"
+},
+
+opacity: {
+value: 0.5
+},
+
+size: {
+value: 3
+},
+
+line_linked: {
+
+enable: true,
+distance: 150,
+color: "#00cfe8",
+opacity: 0.4,
+width: 1
+
+},
+
+move: {
+
+enable: true,
+speed: 2
+
+}
+
+},
+
+interactivity: {
+
+detect_on: "canvas",
+
+events: {
+
+onhover: {
+enable: true,
+mode: "grab"
+},
+
+onclick: {
+enable: true,
+mode: "push"
+}
+
+},
+
+modes: {
+
+grab: {
+distance: 140,
+line_linked: {
+opacity: 1
+}
+},
+
+push: {
+particles_nb: 4
+}
+
+}
+
+},
+
+retina_detect: true
+
+});
+
+</script>
 
 </body>
 </html>
