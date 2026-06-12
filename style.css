@@ -1,16 +1,26 @@
-/* BODY */
+/* ==========================
+GENERAL
+========================== */
 
+*{
+    box-sizing:border-box;
+}
+
+html,
 body{
-    font-family: Arial, sans-serif;
     margin:0;
     padding:0;
+    width:100%;
+    overflow-x:hidden;
+    font-family:Arial, sans-serif;
     background:#000;
     color:white;
     min-height:100vh;
-    overflow-x:hidden;
 }
 
-/* PARTICLES */
+/* ==========================
+PARTICLES BACKGROUND
+========================== */
 
 #particles-js{
     position:fixed;
@@ -21,7 +31,9 @@ body{
     z-index:-1;
 }
 
-/* NAVBAR */
+/* ==========================
+NAVBAR
+========================== */
 
 .navbar{
     display:flex;
@@ -44,25 +56,43 @@ body{
     display:flex;
     list-style:none;
     gap:25px;
+    margin:0;
+    padding:0;
 }
 
 .navbar ul li a{
     color:white;
     text-decoration:none;
+    transition:0.3s;
 }
 
 .navbar ul li a:hover{
     color:#00cfe8;
 }
 
-/* HERO */
+/* ==========================
+HERO
+========================== */
 
 .hero{
     text-align:center;
-    padding:80px 20px;
+    padding:60px 20px;
 }
 
-/* PROFILE */
+.hero h1{
+    font-size:55px;
+    margin:20px 0 10px;
+}
+
+#typing{
+    color:#00cfe8;
+    font-size:24px;
+    min-height:30px;
+}
+
+/* ==========================
+PROFILE IMAGE
+========================== */
 
 .img-container{
     width:180px;
@@ -78,27 +108,16 @@ body{
     width:100%;
     height:100%;
     object-fit:cover;
+    display:block;
 }
 
 .profile-img:hover{
     transform:scale(1.05);
 }
 
-/* NAME */
-
-.hero h1{
-    font-size:55px;
-    margin-top:20px;
-    color:white;
-}
-
-#typing{
-    color:#00cfe8;
-    font-size:24px;
-    min-height:30px;
-}
-
-/* BUTTONS */
+/* ==========================
+BUTTONS
+========================== */
 
 .buttons{
     margin-top:20px;
@@ -113,13 +132,17 @@ body{
     margin:5px;
     display:inline-block;
     font-weight:bold;
+    transition:0.3s;
 }
 
 .btn:hover{
+    transform:translateY(-3px);
     box-shadow:0 0 15px #00cfe8;
 }
 
-/* SECTION */
+/* ==========================
+SECTIONS
+========================== */
 
 section{
     margin:20px;
@@ -132,20 +155,28 @@ h2{
     color:#00cfe8;
 }
 
-/* PROJECTS */
+/* ==========================
+PROJECTS GRID
+========================== */
 
 .projects{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:20px;
 }
+
+/* ==========================
+CARDS
+========================== */
 
 .card{
     background:#1f2937;
-    padding:20px;
+    padding:25px;
     border-radius:15px;
     text-align:center;
     transition:0.3s;
+    height:100%;
 }
 
 .card:hover{
@@ -153,7 +184,9 @@ h2{
     box-shadow:0 0 15px #00cfe8;
 }
 
-/* SKILLS */
+/* ==========================
+SKILLS
+========================== */
 
 .skill-card{
     text-align:center;
@@ -166,7 +199,9 @@ h2{
     margin-bottom:10px;
 }
 
-/* CONTACT */
+/* ==========================
+CONTACT FORM
+========================== */
 
 form{
     display:flex;
@@ -191,57 +226,114 @@ textarea:focus{
     box-shadow:0 0 10px #00cfe8;
 }
 
-/* FOOTER */
+/* ==========================
+FOOTER
+========================== */
 
 .footer{
     background:#000;
     text-align:center;
     padding:20px;
-    margin-top:30px;
+    margin-top:40px;
+    width:100%;
+    clear:both;
 }
 
 .socials{
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:15px;
     margin-bottom:10px;
 }
 
 .icon{
-    width:30px;
-    height:30px;
+    width:24px;
+    height:24px;
     object-fit:contain;
+    transition:0.3s;
 }
 
 .icon:hover{
     transform:scale(1.2);
 }
 
-/* MOBILE */
+/* ==========================
+SCROLL DOWN ICON
+========================== */
+
+.scroll-down{
+    font-size:35px;
+    color:#00cfe8;
+    margin-top:20px;
+}
+
+/* ==========================
+MOBILE
+========================== */
 
 @media(max-width:768px){
 
     .navbar{
         flex-direction:column;
+        padding:15px;
     }
 
     .navbar ul{
-        padding:0;
-        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .logo{
+        margin-bottom:10px;
+        font-size:20px;
+    }
+
+    .hero{
+        padding:40px 15px;
     }
 
     .hero h1{
         font-size:36px;
     }
 
+    #typing{
+        font-size:18px;
+    }
+
     .img-container{
-        width:140px;
-        height:140px;
+        width:150px;
+        height:150px;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
     }
 
     .btn{
-        display:block;
-        width:200px;
-        margin:10px auto;
+        width:220px;
+        text-align:center;
+        margin:8px 0;
+    }
+
+    .projects{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        margin:10px;
+        padding:15px;
+    }
+
+    .skill-icon{
+        width:50px;
+        height:50px;
+    }
+
+    .icon{
+        width:20px;
+        height:20px;
     }
 }
