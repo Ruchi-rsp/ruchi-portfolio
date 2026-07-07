@@ -1,196 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ruchi Parekar</title>
 
-<title>Contact | Ruchi Parekar</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init({
+                publicKey: "ozed6GvsO9WU3NWJo",
+            });
+        })();
+    </script>
 
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-<nav class="navbar">
+    <nav class="navbar">
 
-<div class="logo">
-Ruchi Parekar
-</div>
+        <div class="logo">
+            Ruchi Parekar
+        </div>
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="skills.html">Skills</a></li>
-<li><a href="project.html">Projects</a></li>
-</ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </ul>
 
-</nav>
+    </nav>
 
-<!-- HERO -->
+    <!-- HERO -->
 
-<section class="hero">
+    <section class="hero">
 
-<h1>📧 Contact Me</h1>
+        <h1>📧 Contact Me</h1>
 
-<p style="color:#00cfe8;font-size:20px;">
-Let's Connect & Build Something Amazing
-</p>
+        <p style="color:#00cfe8;font-size:20px;">
+            Let's Connect & Build Something Amazing
+        </p>
 
-</section>
+    </section>
 
-<!-- CONTACT INFO -->
+    <!-- CONTACT INFO -->
 
-<section>
+    <section>
 
-<h2>Contact Information</h2>
+        <h2>Contact Information</h2>
 
-<div class="projects">
+        <div class="projects">
 
-<div class="card">
+            <div class="card">
 
-<h3>📧 Email</h3>
+                <h3>📧 Email</h3>
 
-<p>
-parekarruchi@gmail.com
-</p>
+                <p>
+                    parekarruchi@gmail.com
+                </p>
 
-<a href="mailto:parekarruchi@gmail.com" class="btn">
-Send Email
-</a>
+                <a href="mailto:parekarruchi@gmail.com" class="btn">
+                    Send Email
+                </a>
 
-</div>
+            </div>
 
-<div class="card">
+            <div class="card">
 
-<h3>💻 GitHub</h3>
+                <h3>💻 GitHub</h3>
 
-<p>
-View my projects and repositories.
-</p>
+                <p>
+                    View my projects and repositories.
+                </p>
 
-<a href="https://github.com/Ruchi-rsp"
-target="_blank"
-class="btn">
+                <a href="https://github.com/Ruchi-rsp"
+                    target="_blank"
+                    class="btn">
+                    GitHub Profile
+                </a>
 
-GitHub Profile
+            </div>
 
-</a>
+            <div class="card">
 
-</div>
+                <h3>💼 LinkedIn</h3>
 
-<div class="card">
+                <p>
+                    Connect with me professionally.
+                </p>
 
-<h3>💼 LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/ruchi-parekar-550892357/"
+                    target="_blank"
+                    class="btn">
+                    LinkedIn Profile
+                </a>
 
-<p>
-Connect with me professionally.
-</p>
+            </div>
 
-<a href="https://www.linkedin.com/in/ruchi-parekar-550892357/"
-target="_blank"
-class="btn">
+        </div>
 
-LinkedIn Profile
+    </section>
 
-</a>
+    <!-- CONTACT FORM -->
 
-</div>
+    <section>
 
-</div>
+        <h2>Send a Message</h2>
 
-</section>
+        <form id="contact-form">
 
-<!-- CONTACT FORM -->
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
 
-<section>
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
 
-<h2>Send a Message</h2>
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required></textarea>
 
-<form action="https://formsubmit.co/parekarruchi@gmail.com" method="POST">
+            <button type="submit" class="btn">
+                Send Message
+            </button>
 
-<input
-type="text"
-name="name"
-placeholder="Your Name"
-required>
+        </form>
 
-<input
-type="email"
-name="email"
-placeholder="Your Email"
-required>
+    </section>
 
-<textarea
-name="message"
-rows="6"
-placeholder="Your Message"
-required></textarea>
+    <!-- RESUME -->
 
-<input type="hidden" name="_captcha" value="false">
+    <section>
 
-<input type="hidden" name="_next" value="https://ruchi-rsp.github.io/ruchi-portfolio/contact.html">
+        <h2>Resume</h2>
 
-<button type="submit" class="btn">
-Send Message
-</button>
+        <div style="text-align:center;">
 
-</form>
+            <a href="resume.pdf" class="btn">
+                📄 Download Resume
+            </a>
 
-</section>
+        </div>
 
-<!-- RESUME -->
+    </section>
 
-<section>
+    <!-- BACK BUTTON -->
 
-<h2>Resume</h2>
+    <div style="text-align:center;margin-bottom:40px;">
 
-<div style="text-align:center;">
+        <a href="index.html" class="btn">
+            ⬅ Back to Home
+        </a>
 
-<a href="resume.pdf" class="btn">
-📄 Download Resume
-</a>
+    </div>
 
-</div>
+    <!-- FOOTER -->
 
-</section>
+    <footer class="footer">
 
-<!-- BUTTON -->
+        <div class="socials">
 
-<div style="text-align:center;margin-bottom:40px;">
+            <a href="mailto:parekarruchi@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
+            </a>
 
-<a href="index.html" class="btn">
-⬅ Back to Home
-</a>
+            <a href="https://github.com/Ruchi-rsp" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="icon">
+            </a>
 
-</div>
+            <a href="https://www.linkedin.com/in/ruchi-parekar-550892357/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" class="icon">
+            </a>
 
-<!-- FOOTER -->
+        </div>
 
-<footer class="footer">
+        <p>
+            © 2026 Ruchi Parekar | IoT & Embedded Systems Portfolio
+        </p>
 
-<div class="socials">
+    </footer>
 
-<a href="mailto:parekarruchi@gmail.com">
-<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
-</a>
+    <script>
 
-<a href="https://github.com/Ruchi-rsp" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="icon">
-</a>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
 
-<a href="https://www.linkedin.com/in/ruchi-parekar-550892357/" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" class="icon">
-</a>
+            event.preventDefault();
 
-</div>
+            emailjs.sendForm(
+                "service_0e745xe",
+                "template_joxa0mp",
+                this
+            )
 
-<p>
-© 2026 Ruchi Parekar | IoT & Embedded Systems Portfolio
-</p>
+            .then(function () {
 
-</footer>
+                alert("✅ Message Sent Successfully!");
+
+                document.getElementById("contact-form").reset();
+
+            })
+
+            .catch(function (error) {
+
+                alert("❌ Failed to send message!");
+
+                console.log(error);
+
+            });
+
+        });
+
+    </script>
 
 </body>
 
