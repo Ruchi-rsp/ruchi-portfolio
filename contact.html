@@ -1,29 +1,202 @@
-<form action="https://formsubmit.co/parekarruchi@gmail.com" method="POST">
+<!DOCTYPE html>
+<html lang="en">
 
-    <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ruchi Parekar</title>
 
-    <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <textarea
-        name="message"
-        rows="6"
-        placeholder="Your Message"
-        required></textarea>
+<body>
 
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-    <input type="hidden" name="_template" value="table">
+    <!-- NAVBAR -->
 
-    <button type="submit" class="btn">
-        Send Message
-    </button>
+    <nav class="navbar">
 
-</form>
+        <div class="logo">
+            Ruchi Parekar
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>📧 Contact Me</h1>
+
+        <p style="color:#00cfe8;font-size:20px;">
+            Let's Connect & Build Something Amazing
+        </p>
+
+    </section>
+
+    <!-- CONTACT INFO -->
+
+    <section>
+
+        <h2>Contact Information</h2>
+
+        <div class="projects">
+
+            <div class="card">
+
+                <h3>📧 Email</h3>
+
+                <p>
+                    parekarruchi@gmail.com
+                </p>
+
+                <a href="mailto:parekarruchi@gmail.com" class="btn">
+                    Send Email
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>💻 GitHub</h3>
+
+                <p>
+                    View my projects and repositories.
+                </p>
+
+                <a href="https://github.com/Ruchi-rsp"
+                    target="_blank"
+                    class="btn">
+
+                    GitHub Profile
+
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>💼 LinkedIn</h3>
+
+                <p>
+                    Connect with me professionally.
+                </p>
+
+                <a href="https://www.linkedin.com/in/ruchi-parekar-550892357/"
+                    target="_blank"
+                    class="btn">
+
+                    LinkedIn Profile
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT FORM -->
+
+    <section>
+
+        <h2>Send a Message</h2>
+
+        <form action="https://formsubmit.co/parekarruchi@gmail.com" method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required></textarea>
+
+            <!-- FormSubmit Settings -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+            <!-- Redirect after submit -->
+            <input type="hidden" name="_next"
+                value="https://ruchi-rsp.github.io/ruchi-portfolio/contact.html">
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- RESUME -->
+
+    <section>
+
+        <h2>Resume</h2>
+
+        <div style="text-align:center;">
+
+            <a href="resume.pdf" class="btn">
+                📄 Download Resume
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- BACK BUTTON -->
+
+    <div style="text-align:center;margin-bottom:40px;">
+
+        <a href="index.html" class="btn">
+            ⬅ Back to Home
+        </a>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="socials">
+
+            <a href="mailto:parekarruchi@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="icon">
+            </a>
+
+            <a href="https://github.com/Ruchi-rsp" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/ruchi-parekar-550892357/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" class="icon">
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 Ruchi Parekar | IoT & Embedded Systems Portfolio
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
